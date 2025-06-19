@@ -13,9 +13,7 @@ export default function AssemblyEndgame() {
     )
   })
 
-
-
-  // Display programming languages as chips
+  // Create span for every language
   const languagesElements = languages.map(language => {
     const styles = {
       backgroundColor: language.backgroundColor,
@@ -31,6 +29,18 @@ export default function AssemblyEndgame() {
       </span>
     )
 
+    })
+
+
+    // Create button for every letter
+    const alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+    const keyboardElements = alphabet.toUpperCase().split('').map(letter => {
+      return(
+        <button key={letter} className="letter-btn">
+          {letter}
+        </button>
+      )
     })
       
 
@@ -56,6 +66,10 @@ export default function AssemblyEndgame() {
 
         <section className="letters-container">
           {letterElements}
+        </section>
+
+        <section className="keyboard">
+          {keyboardElements}
         </section>
       </main>
     </>
