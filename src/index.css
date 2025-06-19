@@ -12,3 +12,28 @@ body {
   display: flex;
   justify-content: center;
 }
+
+header {
+  text-align: center;
+}
+
+.game-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #F9F4DA;
+  text-align: center;
+}
+
+.game-description {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #8E8E8E;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+  .game-description{
+    font-size: 0.8rem;
+  }
+}
+

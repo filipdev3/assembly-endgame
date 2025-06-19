@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './public /react.svg'
-import viteLogo from '/vite.svg'
-
-function App() {
-  const [count, setCount] = useState(0)
+export default function AssemblyEndgame() {
+  
 
   return (
     <>
-      
+      <main>
+        <header>
+          <h1 className="game-title">Assembly: Endgame</h1>
+          <p className="game-description">
+            Guess the word in under 8 attempts to keep the <br/>
+            programming world safe from Assembly.
+          </p>
+        </header>
+      </main>
     </>
   )
 }
 
-export default App
+
