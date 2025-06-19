@@ -1,9 +1,21 @@
+import { useState } from "react"
 import { languages } from "./languages-list/languages"
 
 export default function AssemblyEndgame() {
 
+  // State for word to guess
+  const [currentWord, setCurrentWord] = useState('acknowledge')
+
+  // Display stored word as individual letters
+  const letterElements = currentWord.toUpperCase().split('').map((letter, index) => {
+    return (
+      <span key={index} className="letter-to-guess">{letter}</span>
+    )
+  })
 
 
+
+  // Display programming languages as chips
   const languagesElements = languages.map(language => {
     const styles = {
       backgroundColor: language.backgroundColor,
@@ -40,6 +52,10 @@ export default function AssemblyEndgame() {
 
         <section className="languages-container">
             {languagesElements}
+        </section>
+
+        <section className="letters-container">
+          {letterElements}
         </section>
       </main>
     </>

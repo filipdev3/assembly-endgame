@@ -1,3 +1,10 @@
+#root > main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -72,10 +79,39 @@ header {
   flex-wrap: wrap;
   gap: 2px;
   max-width: 350px;
+  margin-bottom: 30px;
+  max-width: 350px;
 }
 
 .language-chip {
   padding: 3px 2px;
   border-radius: 3px;
   
+}
+
+.letters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.letter-to-guess{
+  background-color: #323232;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #F9F4DA;
+  font-size: 1.125rem;
+  color: #F9F4DA;
+}
+
+@media only screen and (max-width: 424px){
+  .letter-to-guess{
+    width: 30px;
+    height: 30px;
+  }
 }
