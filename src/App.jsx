@@ -11,6 +11,10 @@ export default function AssemblyEndgame() {
             programming world safe from Assembly.
           </p>
         </header>
+        <section className="status-section">
+          <h2>You Win!</h2>
+          <p>Well done 🎉</p>
+        </section>
       </main>
     </>
   )
