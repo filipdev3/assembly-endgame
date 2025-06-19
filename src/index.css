@@ -43,6 +43,7 @@ header {
   border-radius: 4px;
   width: 352px;
   padding: 1px;
+  margin-block: 30px;
 }
 
 @media only screen and (max-width: 320px){
@@ -64,3 +65,17 @@ header {
   margin: 5px;
 }
 
+.languages-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  max-width: 350px;
+}
+
+.language-chip {
+  padding: 3px 2px;
+  border-radius: 3px;
+  
+}
