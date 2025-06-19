@@ -144,3 +144,14 @@ header {
   }
 }
 
+.new-game-btn {
+  background-color: #11B5E5;
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 230px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+

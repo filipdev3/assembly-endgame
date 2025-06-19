@@ -71,6 +71,8 @@ export default function AssemblyEndgame() {
         <section className="keyboard">
           {keyboardElements}
         </section>
+
+        <button className="new-game-btn">New Game</button>
       </main>
     </>
   )
